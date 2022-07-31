@@ -1,0 +1,22 @@
+body {
+  background-color: #ddd;
+  margin: 0;
+}
+#redbox{
+  width: 500px;
+  height: 200px;
+  background-color: red;
+  margin: 0 auto;
+}
+.greenBox{
+  width: 300px;
+  height: 200px;
+  background-color: green;
+  float: left;
+}
+.aquaBox{
+  width: 200px;
+  height: 200px;
+background-color: aqua;
+float: right;
+}
