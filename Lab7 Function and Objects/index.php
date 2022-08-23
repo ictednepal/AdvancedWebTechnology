@@ -45,3 +45,5 @@
     echo "The name is =".$stu1->get_name();
     echo "<br/>";
     echo "The address is =".$stu1->get_address();
+
+    ?>
