@@ -12,6 +12,10 @@ $address['ram'] = "Kathmandu";
 $address['sita'] = "Bhakrapur";
 $address['hari'] = "Lalitpur";
 
-echo "Sita lives in ".$address["sita"];
+// echo "Sita lives in ".$address["sita"];
+foreach ($address as $key => $value) {
+    echo $key." lives in ".$value."<br/>";
+}
+
 
 ?>
