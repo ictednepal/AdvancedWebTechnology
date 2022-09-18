@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['login_user'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,13 @@
     <title>Document</title>
 </head>
 <body>
-    Hello User
+    <h1>Hello <?php echo ucwords($_SESSION['login_user']); ?></h1>
+    <a href="logout.php?Logout">Logout</a>
 </body>
 </html>
+<?php
+}
+else{
+    header("location:index.php");
+}
+?>

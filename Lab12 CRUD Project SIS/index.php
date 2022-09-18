@@ -25,6 +25,11 @@
                     <button type="reset">Clear</button>
                 </td>
             </tr>
+            <?php
+                if(@$_GET['Invalid']==true){
+                    echo $_GET['Invalid'];
+                }
+            ?>
         </form>
     </table>
 </body>
