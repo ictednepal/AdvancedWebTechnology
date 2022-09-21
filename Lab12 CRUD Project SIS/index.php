@@ -1,36 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information System - Login Please</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Welcome to Student Information System</title>
 </head>
+
 <body>
-    <h2 style="text-align:center; text-transform:uppercase">student information system</h2>
-    <table align="center">
-        <form action="login_process.php" method="POST">
-            <tr>
-                <td><label for="username">Username :</label></td>
-                <td><input type="text" id="username" name="username"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password :</label></td>
-                <td><input type="password" id="password" name="password"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <button type="submit" name="submit">Log In</button>
-                    <button type="reset">Clear</button>
-                </td>
-            </tr>
-            <?php
-                if(@$_GET['Invalid']==true){
-                    echo $_GET['Invalid'];
-                }
-            ?>
-        </form>
-    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <!-- Login form -->
+                <div class="d-flex align-items-center justify-content-center vh-100">
+                <form action="login_process.php" method="POST">
+                    <img src="images/sisLogo.png" class="img-fluid mx-auto d-block" width="50%" alt="Logo Here">
+                    <h4 class="text-center text-capitalize">student information system</h4>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" name="user" placeholder="Username...">
+                       </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="pass" placeholder="Password...">
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary text-uppercase">Submit</button>
+                    <a class="btn btn-success" href="register.php" role="button">Register</a>
+                    <?php
+                    if(@$_GET['Invalid'] == true){
+                    ?>
+                        <div class="alert alert-danger text-center" role="alert"><?php echo $_GET['Invalid']; ?></div>
+                    <?php
+                    }
+                    ?>
+                </form>
+                </div>
+                <!-- /Login form -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

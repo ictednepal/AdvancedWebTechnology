@@ -1,8 +1,0 @@
-1. create database `db_sis`;
-2. create table `db_sis`.`tbl_users`
-(
-    `id` int(2) primary key not null auto_increment,
-    `user` varchar(255) not null,
-    `pass` varchar(255) not null
-);
-3. insert into `tbl_users`(`user`,`pass`)values('ram','ram@123');
