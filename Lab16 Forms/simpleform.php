@@ -8,7 +8,7 @@
 </head>
 <body>
     <table>
-        <form action="" method="get" autocomplete="on">
+        <form action="anotherpage.php" method="get" autocomplete="on">
             <tr>
                 <td><label for="name">Name :</label></td>
                 <td><input type="text" name="name" id="name" autofocus required placeholder="Enter your name"></td>
@@ -23,7 +23,11 @@
             </tr>
             <tr>
                 <td><label for="age">Age :</label></td>
-                <td><input type="number" name="age" id="age" min="1" max="29"></td>
+                <td><input type="number" name="age" id="age" min="1" max="29" step="5"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB :</label></td>
+                <td><input type="date" name="dob" id="dob" min="2018-09-07" step="2"></td>
             </tr>
             <tr>
                 <td><label for="effi">Efficiency :</label></td>
@@ -35,7 +39,10 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><input type="submit" value="Submit"></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="submit" formaction="thispage.php" value="Submit to this page">
+                </td>
             </tr>
         </form>
     </table>
