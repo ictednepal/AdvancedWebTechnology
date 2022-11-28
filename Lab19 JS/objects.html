@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="openWindow(); ">Open Window</button><br><br>
+    <button onclick="closeWindow(); ">Close Window</button><br><br>
+
+    <script>
+        let mybox;
+        function openWindow(){
+            mybox = window.open("https://www.google.com/","_blank","width:500,height:400");
+        }
+        function closeWindow(){
+            mybox.close();
+        }
+    </script> -->
+
+    <!-- <p id="hello"></p>
+    <script>
+        let passoword = "sanothimi";
+        let ciphertext = window.btoa(passoword); //base-64 encoding and decoding methods
+        let plaintext = window.atob(ciphertext);
+        document.getElementById("hello").innerHTML = "The ciphertext : " + ciphertext + " and the plain text : " + plaintext ;
+    </script> -->
+
+    <!-- <script>
+        function ageCheck(a){
+            if(a<18){
+                alert("Not eligible to get voter ID.");
+            }
+            else{
+                alert("Eligible to get Voter ID.");
+            }
+        }
+
+        var a = parseInt(prompt("Enter your age :"));
+        ageCheck(a);
+    </script> -->
+
+
+    <script>
+        let fname = "Harshabardhan";
+        let lname = " Rane";
+        // let result = name.charAt(0); //H
+        // let result = name.charAt(11); //a
+        // let result = name.length; //13
+        // let result = name.charAt((name.length)-3);
+        let result = fname.concat(lname);
+        // document.write(result);
+        let croptext = result.substr(2,6);
+        document.write(croptext);
+    </script>
+
+
+
+</body>
+</html>
